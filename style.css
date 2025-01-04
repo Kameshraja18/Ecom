@@ -41,7 +41,7 @@ p {
 
 button.normal {
   font-size: 14px;
-  font-weight: 600px;
+  font-weight: 600;
   padding: 15px 30px;
   color: #000;
   background-color: #fff;
@@ -455,3 +455,142 @@ span {
   border-radius: 7px;
 }
 
+/* Media Queries for responsiveness */
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .header-list-nav ul {
+    flex-direction: column;
+  }
+  .header-list-nav ul li {
+    padding: 10px 0;
+  }
+  #hero {
+    padding: 0 20px;
+  }
+  #hero h4 {
+    font-size: 30px;
+  }
+  #hero h2 {
+    font-size: 50px;
+  }
+  #hero h1 {
+    font-size: 50px;
+  }
+  #hero button {
+    width: 200px;
+    height: 50px;
+    font-size: 16px;
+  }
+  #features {
+    flex-direction: column;
+  }
+  .product-section .pro-collection {
+    margin: 0 20px;
+  }
+  .product-section .product-cart {
+    width: 100%;
+  }
+  #banners .big-banners {
+    flex-direction: column;
+  }
+  #banners .small-banners {
+    flex-direction: column;
+  }
+  #newsletter {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #newsletter .form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 992px) {
+  #header {
+    padding: 20px 40px;
+  }
+  #hero {
+    padding: 0 40px;
+  }
+  #hero h4 {
+    font-size: 35px;
+  }
+  #hero h2 {
+    font-size: 60px;
+  }
+  #hero h1 {
+    font-size: 60px;
+  }
+  #hero button {
+    width: 240px;
+    height: 55px;
+    font-size: 18px;
+  }
+  #features {
+    flex-direction: column;
+  }
+  .product-section .pro-collection {
+    margin: 0 30px;
+  }
+  .product-section .product-cart {
+    width: 45%;
+  }
+  #banners .big-banners {
+    flex-direction: column;
+  }
+  #banners .small-banners {
+    flex-direction: column;
+  }
+  #newsletter {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #footer {
+    flex-direction: column;
+    padding: 40px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 993px) {
+  #header {
+    padding: 20px 80px;
+  }
+  #hero {
+    padding: 0 80px;
+  }
+  #features {
+    flex-direction: row;
+  }
+  .product-section .pro-collection {
+    margin: 0 60px;
+  }
+  .product-section .product-cart {
+    width: 280px;
+  }
+  #banners .big-banners {
+    flex-direction: row;
+  }
+  #banners .small-banners {
+    flex-direction: row;
+  }
+  #newsletter {
+    flex-direction: row;
+    padding: 0 75px;
+  }
+  #footer {
+    flex-direction: row;
+    padding: 75px;
+  }
+}
